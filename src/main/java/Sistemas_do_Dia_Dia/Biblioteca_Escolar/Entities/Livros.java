@@ -1,10 +1,16 @@
 package Sistemas_do_Dia_Dia.Biblioteca_Escolar.Entities;
 
 public class Livros {
-   public String[] nomeLivro = {"Harry potter", "Batman", "Diario de um banana", "Vidas Secas"};
-   public int[] idLivro = {1, 2, 3, 4};
-   public boolean[] disponivel= {true, false, true, false};
-   public int livroAtual;
+   private String[] nomeLivro;
+   private int[] idLivro;
+   private boolean[] disponivel;
+   private int livroAtual;
+
+   public Livros() {
+       this.nomeLivro = new String[]{"Harry potter", "Batman", "Diario de um banana", "Vidas Secas"};
+       this.idLivro = new int[]{1, 2, 3, 4};
+       this.disponivel = new boolean[]{true, false, true, false};
+   }
 
    public boolean verificarIdDoLivro(int id) {
        boolean temLivro = false;

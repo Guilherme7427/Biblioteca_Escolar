@@ -1,10 +1,16 @@
 package Sistemas_do_Dia_Dia.Biblioteca_Escolar.Entities;
 
 public class Aluno {
-    public int[] numMatricula = {1, 2, 3, 4};
-    public int[] numMultas = {0, 0, 0, 1};
-    public int[] numLivros = {1, 2, 3, 2};
-    public int usuarioAtual;
+    private int[] numMatricula;
+    private int[] numMultas;
+    private int[] numLivros;
+    private int usuarioAtual;
+
+    public Aluno() {
+        this.numMatricula = new int[]{1, 2, 3, 4};
+        this.numMultas = new int[]{0, 0, 0, 1};
+        this.numLivros = new int[]{1, 2, 3, 2};
+    }
 
     public boolean verificarMatricula(int matricula){
         boolean temMatricula = false;
